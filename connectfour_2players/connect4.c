@@ -516,12 +516,12 @@ void check_diagonal(void){
 				p_dia[temp] = 0 ; 
 			
 			
-			p_dia[game[roww][col]]++ ; 
+			p_dia[game[roww2][col]]++ ; 
 
-			if (p_dia[game[roww][col]] >= 4 )
-			{p_win[game[roww][col]] = 1 ; }
+			if (p_dia[game[roww2][col]] >= 4 )
+			{p_win[game[roww2][col]] = 1 ; }
 			
-			temp = game[roww][col] ;
+			temp = game[roww2][col] ;
 			roww2++;
 			 
 		}
@@ -540,16 +540,16 @@ void check_diagonal(void){
 	if (roww2 > 5  || roww2 <0) 
 				continue ; 
 			
-		if (temp != game[roww][col])
+		if (temp != game[roww2][col])
 			p_dia[temp] = 0 ; 
 
 			
-			p_dia[game[roww][col]]++ ; 
+			p_dia[game[roww2][col]]++ ; 
 
-			if (p_dia[game[roww][col]] >= 4 )
-			{p_win[game[roww][col]] = 1 ; }
+			if (p_dia[game[roww2][col]] >= 4 )
+			{p_win[game[roww2][col]] = 1 ; }
 			
-			temp = game[roww][col] ;
+			temp = game[roww2][col] ;
 			roww2--;
 			 
 		}
